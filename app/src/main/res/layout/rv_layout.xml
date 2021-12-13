@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/darker_gray">
+
+    <TextView
+        android:id="@+id/painLevel"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="#FFAFAF"
+        android:text="pain  level"
+        android:fontFamily="@font/adamina"
+        android:textColor="#EFECEC"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:fontFamily="@font/adamina"
+            android:text="Date"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adamina"
+            android:text="Email"
+            android:textSize="16sp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rvLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/adamina"
+                android:text="pain location"
+                android:textSize="12dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/rvMood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/adamina"
+                android:text="mood"
+                android:textSize="12dp"
+                android:background="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rvTemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/adamina"
+                android:text="Temp"
+                android:textSize="12dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/rvHumidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/adamina"
+                android:text="humidity"
+                android:textSize="12dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/rvPressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/adamina"
+                android:text="pressure"
+                android:textSize="12dp"
+                android:background="@android:color/darker_gray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rvGoalSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/adamina"
+                android:text="Goal"
+                android:textSize="12dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/rvTodaySteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/adamina"
+                android:text="today steps"
+                android:textSize="12dp"
+                android:background="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+        <!--        <ImageView-->
+        <!--        android:id="@+id/iv_item_delete"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_weight="1"-->
+        <!--        android:padding="8dp"-->
+        <!--        android:src="@android:drawable/ic_menu_close_clear_cancel"/>-->
+    </LinearLayout>
+</LinearLayout>

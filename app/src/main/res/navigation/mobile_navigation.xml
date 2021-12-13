@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_pain_data"
+        android:name="fragment.PainDataFragment"
+        android:label="PainDataFragment" />
+    <fragment
+        android:id="@+id/nav_daily_record"
+        android:name="fragment.DailyRecordFragment"
+        android:label="DailyRecordFragment" />
+    <fragment
+        android:id="@+id/nav_reports"
+        android:name="fragment.ReportsFragment"
+        android:label="ReportsFragment" >
+        <action
+            android:id="@+id/report_to_pain_weather"
+            app:destination="@id/reportPainWeather" />
+        <action
+            android:id="@+id/reports_to_reportPainLocation"
+            app:destination="@id/reportPainLocation" />
+        <action
+            android:id="@+id/reports_to_reportStepsPie"
+            app:destination="@id/reportStepsPie" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="fragment.MapsFragment"
+        android:label="MapsFragment" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="fragment.HomeFragment"
+        android:label="HomeFragment" />
+    <activity
+        android:id="@+id/nav_logout"
+        android:name="com.example.paindiary.Login"
+        android:label="Login"/>
+    <fragment
+        android:id="@+id/reportPainWeather"
+        android:name="fragment.ReportPainWeather"
+        android:label="ReportPainWeather" >
+        <action
+            android:id="@+id/pain_weather_to_report"
+            app:destination="@id/nav_reports" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportPainLocation"
+        android:name="fragment.ReportPainLocation"
+        android:label="ReportPainLocation" >
+        <action
+            android:id="@+id/ReportPainLocation_to_reports"
+            app:destination="@id/nav_reports" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportStepsPie"
+        android:name="fragment.ReportStepsPie"
+        android:label="ReportStepsPie" >
+        <action
+            android:id="@+id/ReportStepsPie_to_reports"
+            app:destination="@id/nav_reports" />
+    </fragment>
+
+</navigation>

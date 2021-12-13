@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_pain_data"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="Pain Data Entry" />
+        <item
+            android:id="@+id/nav_daily_record"
+            android:icon="@android:drawable/ic_menu_save"
+            android:title="Daily Records" />
+        <item
+            android:id="@+id/nav_reports"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="Reports" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@android:drawable/ic_menu_mapmode"
+            android:title="Map" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/abc_vector_test"
+            android:title="Logout"
+            android:onClick="logout"/>
+
+    </group>
+</menu>

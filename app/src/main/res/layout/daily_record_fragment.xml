@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepage"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tableTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="My Pain Record"
+        android:fontFamily="@font/adamina"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/deleteAllR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete all record"
+        android:fontFamily="@font/adamina"
+        app:backgroundTint="#FF9800" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+</LinearLayout>
